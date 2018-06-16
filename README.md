@@ -2,14 +2,14 @@
 
 This addons allows to modify default files structure to be more feature-grouped.
 
-## Installation
+## 1. Installation
 
-```
+```shell
 ember install ember-cli-extended-resolver
 ```
 
-## Usage
-```
+## 2. Usage
+```javascript
 //app/resolver.js
 import ExtendedResolver from 'ember-cli-extended-resolver';
 
@@ -18,7 +18,7 @@ export default ExtendedResolver.extend({
 });
 ```
 or
-```
+```javascript
 //app/resolver.js
 import Resolver from 'ember-resolver';
 import { ExtendedResolverMixin } from 'ember-cli-extendexd-resolver';
@@ -27,16 +27,16 @@ export Resolver.extend(ExtendedResolverMixin, {
     //custom settings
 }); 
 ```
-## Settings
+## 3. Settings
 
 ### Models
- * **modelsPodsEnabled**. If models pod should be enbaled. By default `false`.
- * **modelsPodsDirectory**: Directory of Models pod. By default `models`.
+ * **modelsPodsEnabled**. If models pod should be enabled. By default `false`.
+ * **modelsPodsDirectory**: Directory of Models pod. By default `'models'`.
  * **modelsPodsTypes**: File types that models pod contains. By default `['adapter', 'model', 'serializer']`.
 
 ### Routes
- * **routesPodsEnabled**: If routes pod should be enbaled. `false` by default.
- * **routesPodsDirectory**: Directory of Routes pod. By default `routes`.
+ * **routesPodsEnabled**: If routes pod should be enabled. `false` by default.
+ * **routesPodsDirectory**: Directory of Routes pod. By default `'routes'`.
  * **routesPodsTypes**: File types that models pod contains. By default `['controller', 'route', 'template']`.
 
 
@@ -131,3 +131,6 @@ export Resolver.extend(ExtendedResolverMixin, {
 
 ```
 
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
